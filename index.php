@@ -8,3 +8,5 @@
   <a href="01-basico/operadores.php">operadores aritmeticos</a>
   <a href="01-basico/asignacion.php">operadores de asignacion</a>
   <a href="01-basico/asignacion-referencia.php">asignacion por referencia</a>
+  <a href="01-basico/operadores-comparacion.php">operacion de comparacion</a>
+  <a href="01-basico/operador-logico.php">operador logico </a>
