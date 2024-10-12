@@ -10,3 +10,8 @@
   <a href="01-basico/asignacion-referencia.php">asignacion por referencia</a>
   <a href="01-basico/operadores-comparacion.php">operacion de comparacion</a>
   <a href="01-basico/operador-logico.php">operador logico </a>
+  <a href="01-basico/incremento_decremento.php">incremento y decremento </a>
+  <a href="01-basico/condicionales_simples.php">condicionales simples  </a>
+  <a href="01-basico/condicionales_dobles.php">condicionales dobles </a>
+  <a href="01-basico/condicionales_anidados.php">condicionales anidados</a>
+  <a href="01-basico/switch_case.php">switch case </a>
