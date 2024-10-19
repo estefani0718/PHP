@@ -15,3 +15,5 @@
   <a href="01-basico/condicionales_dobles.php">condicionales dobles </a>
   <a href="01-basico/condicionales_anidados.php">condicionales anidados</a>
   <a href="01-basico/switch_case.php">switch case </a>
+  <a href="01-basico/bucle-while.php">bucle while </a>
+  <a href="02-formulario/get.html">02-formulario </a>
