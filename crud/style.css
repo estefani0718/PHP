@@ -1,0 +1,11 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; 
+}
+.contenedor__formulario{
+ background-color: #b6f8b6;
+ justify-content: center;
+ padding: 20px;
+ width: 50%;
+}
