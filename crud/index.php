@@ -30,27 +30,27 @@ $lenguajes=$bandera->fetchAll();
 
 ?>
 
-  <form action="controlador.php" method="post" class="contenedor__formulario">
+  <form action="controlador.php" method="post" class="contenedor__formulario" autocomplete="off">
     <link rel="stylesheet" href="style.css">
-    <h1>FORMULARIO</h1>
-   <div>
-    <label for="" name="nombre">Nombre</label>
-    <input type="text" name="nombre">
-   </div>
-    <div>
-      <label for="" name="apellido">Apellido</label>
-      <input type="text" name="apellido">
+    <h1 class="formulario__title">FORMULARIO</h1>
+   <div class="formulario__elements">
+      <label for="" name="nombre" class="formulario__elements-label">Nombre
+      <input type="text" name="nombre" class="formulario__elements-input" required focus  >
+      </label>
+      <label for="" name="apellido" class="formulario__elements-label">Apellido
+      <input type="text" name="apellido"class="formulario__elements-input"  required>
+      </label>
+    
+      <label for="" name="correo" class="formulario__elements-label">Correo
+      <input type="email" name="correo" class="formulario__elements-input" required>
+      </label>
+    
+      <label for="" name="fecha_nacimiento" class="formulario__elements-label">Fecha nacimiento
+      <input type="date" name="fecha_nacimiento" class="formulario__elements-input" required>
+      </label>
     </div>
-    <div>
-      <label for="" name="correo">Correo</label>
-      <input type="email" name="correo">
-    </div>
-    <div>
-      <label for="" name="fecha_nacimiento">Fecha nacimiento</label>
-      <input type="text" name="fecha_nacimiento">
-    </div>
-    <div>
-      <h3>Seleciona tu ciudad :</h3>
+    <div class="formuario__elements-ciudades">
+      <h3 class="formuario__elements-ciudades-label">Seleciona tu ciudad :</h3>
       <label for="id_ciudades">Ciudad </label>
       <select name="id_ciudades" id="id_ciudades">
         <?php
@@ -71,10 +71,9 @@ $lenguajes=$bandera->fetchAll();
         foreach ($Generos as $key =>$values){
           ?> 
           <div>
-          <label for="<?=$values['id_genero']?>">
-            <?=$values['nombre_genero']?>
+          <label for="<?=$values['id_genero']?>"> <?=$values['nombre_genero']?>
           </label>
-          <input type="radio" id="<?=$values['id_genero']?>" name="id_genero">
+          <input type="radio" id="<?=$values['id_genero']?>" value="<?=$values['id_genero']?>" name="id_genero">
           </div>
           <?php
         }
@@ -90,15 +89,14 @@ $lenguajes=$bandera->fetchAll();
           <div>
             <label for="<?=$values['id_lenguaje']?>" >
               <?=$values['nombre_lenguaje']?>
-             
-            </label>
-            <input type="checkbox" id="<?=$values['id_lenguaje']?>" value="<?=$values['id_lenguaje']?>" name="id_lenguaje[]">
+              <input type="checkbox" id="<?=$values['id_lenguaje']?>" value="<?=$values['id_lenguaje']?>" name="id_lenguaje[]">
+            </label>  
         </div>
           <?php
         }
         ?>
     </div>
-    <div>
+    <div class="formulario__button">
      <button type="submit" >Guardar</button>
     </div>
   </form>

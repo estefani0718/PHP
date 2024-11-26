@@ -2,10 +2,44 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box; 
+   font-family: 'Times New Roman', Times, serif;
 }
 .contenedor__formulario{
- background-color: #b6f8b6;
+ background-color: #84b6f4;
  justify-content: center;
  padding: 20px;
  width: 50%;
+ height: auto;
+ position: relative;
+ left: 18%;
+ border-radius: 30px;
+}
+.formulario__title{
+   text-align: center;
+
+}
+.formulario__elements{
+   display: flex;
+   flex-direction: column;
+}
+.formulario__elements-label{
+  font-size: 20px;
+  display: flex;
+  margin: 5px;
+  gap: 10px;
+ 
+}
+.formulario__elements-input{
+   width: 25%;
+   font-size: 18px;
+   border-radius: 20px;
+   border: 1px solid #84b6f4;
+   text-align: center;
+}
+.formuario__elements-ciudades{
+   display: flex;
+}
+.formuario__elements-ciudades-label{
+   font-size: 18px;
+   margin-right: 10px;
 }
