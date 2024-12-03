@@ -16,7 +16,7 @@ $lenguajes=$_POST["id_lenguaje"];
 $sql ="INSERT INTO Usuarios (nombre,apellido,correo,fecha_nacimiento,id_genero,id_ciudades) 
 VALUES (:nombre,:apellido,:correo,:fecha_nacimiento,:id_genero,:id_ciudades)";
 
-$stm=$conexion->prepare($sql);
+    $stm=$conexion->prepare($sql);
 
 $stm->bindParam(":nombre",$nombre);
 $stm->bindParam(":apellido",$apellido);
